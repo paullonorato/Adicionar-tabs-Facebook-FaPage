@@ -3,98 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Facebook :: Inserting app on page</title>
-
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
 	
-	<script type="text/javascript">
-		$( document ).ready(function() {
-
-			$( "#button" ).click( function(){
-				appID = $( "#appID" ).val();
-				appURL = $( "#appURL" ).val();
-				
-				window.location.href = "https://www.facebook.com/dialog/pagetab?app_id=" + appID + "&next=" + appURL;
-			});
-		});
-	</script>
-
-	<style type="text/css">
-		*{
-			margin: 0;
-			padding: 0;
-		}
-
-		body{
-			background: #f5f5f5;
-		}
-
-		h1, p{
-			font-family: Franklin Gothic Book, Arial;
-			text-align: center;
-		}
-
-		h1{
-			margin-top: 90px;
-		}
-
-		p{
-			margin-bottom: 90px;
-		}
-
-		form{
-			margin: auto;
-			padding: 30px 0 0 0;
-			width: 500px;
-			overflow: hidden;
-			border-radius: 3px;
-			border: 1px solid #ccc;
-			background: #fff;
-		}
-
-		label{
-			margin-bottom: 25px;
-			padding: 0 30px;
-			display: block;
-
-			font-family: Arial;
-			font-size: 13px;
-			font-weight: bold; 
-		}
-
-		label input{
-			margin-top: 3px;
-			padding: 8px 5px;
-			width: 96%;
-			border-radius: 2px;
-			border: 1px solid #ddd;
-		}
-
-		#button{
-			padding: 10px;
-			overflow: hidden;
-			border-top: 1px solid #ccc;
-			background: #eee;
-		}
-
-		#button input{
-			padding: 5px;
-			border: 1px solid #29447e;
-			background: #5972a7;
-			box-shadow: inset 0 1px 0 #8a9cc2;
-			float: right;
-			cursor: pointer;
-			
-
-			color: #fff;
-			font-size: 12px;
-			font-weight: bold; 
-		}
-
-		#button input:active{
-			background: #4f6aa3;
-			box-shadow: none;
-		}
-	</style>
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 	<h1>Facebook :: Inserting app on page</h1>
@@ -104,17 +14,20 @@
 	<form action="">
 		<label for="">
 			<span>App ID</span>
-			<input type="" value="" id="appID">
+			<input type="" value="" id="appID" placeholder="343931975714523">
 		</label>
 
 		<label for="">
 			<span>Facebook page URL</span>
-			<input type="" value="" id="appURL">
+			<input type="" value="" id="appURL" placeholder="https://www.facebook.com/yourpage">
 		</label>
 
 		<div id="button">
 			<input type="button" value="Add app">
 		</div>
 	</form>
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js.min.js"></script>
 </body>
 </html>
